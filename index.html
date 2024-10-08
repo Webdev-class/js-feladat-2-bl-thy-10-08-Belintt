@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időjárás Adat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Időjárás Információ</h1>
+
+    <div>
+        <h3>Átlaghőmérséklet egy napon:</h3>
+        <input type="number" id="lat" placeholder="Szélesség">
+        <input type="number" id="lon" placeholder="Hosszúság">
+        <input type="date" id="date">
+        <button id="getAvgTempBtn">Lekérdezés</button>
+        <p id="avg-temp"></p>
+    </div>
+
+    <div>
+        <h3>Hőmérséklet egy adott órában:</h3>
+        <input type="number" id="lat2" placeholder="Szélesség">
+        <input type="number" id="lon2" placeholder="Hosszúság">
+        <input type="date" id="date2">
+        <input type="number" id="hour" placeholder="Óra">
+        <button id="getHourlyTempBtn">Lekérdezés(hour)</button>
+        <p id="hourly-temp"></p>
+    </div>
+
+    <script defer src="main.js"></script>
+</body>
+</html>
